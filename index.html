@@ -4,19 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" href="/css/font-awesome.min.css">
+    <title>ADMIN PAGE</title>
+    <link rel="stylesheet" href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<link href=" https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header--dark">
         <h3 class="header__title">
+            Admin Page
         </h3>
+        <button class="others__btn">
+            <i class="fa fa-bars"></i>
+        </button>
         <div class="header__search">
-            <form>
-                <input type="text">
+            <form class="header__form">
+                <input class="search__input" type="text" placeholder="Search for..." name="">
                 <button class="search__btn">
-                    <i></i>
+                    <i class="fa fa-search"></i>
+                </button>
+                <button class="others__btn">
+                    <i class="fa fa-user"></i>
+                    <i class="fa fa-caret-down"></i>
                 </button>
             </form>
         </div>
@@ -25,44 +36,76 @@
         <aside>
             <nav class="main">
                 <ul class="nav__ul">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="li__inactive">
+                        <h4>CORE</h4>
+                    </li>
+                    <li class="li__active">
+                        <i class="fa fa-tachometer"></i>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li class="li__inactive">
+                        <h4>INTERFACE</h4>
+                    </li>
+                    <li class="li__active">
+                        <i class="fa fa-windows"></i>
+                        <a href="">Layouts ></a>
+                    </li>
+                    <li class="li__active">
+                        <i class="fa fa-bookmark"></i>
+                        <a href="">Pages ></a>
+                    </li>
+                    <li class="li__inactive">
+                        <h4>ADDONS</h4>
+                    </li>
+                    <li class="li__active">
+                        <i class="fa fa-area-chart"></i>
+                        <a href="">Charts</a>
+                    </li>
+                    <li class="li__active">
+                        <i class="fa fa-table"></i>
+                        <a href="">Tables</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
         </section class="content">
         <h1>
-            <div class="main__breadcrumb">
-                <div class="main__cards">
-                    <div class="main__card">
-                        <div class="card__top"></div>
-                        <div class="card__botton"></div>
-                        <div class="main__card--blue"></div>
+            Dashboard
+        </h1>
+        <div class="main__breadcrumb">
+            Dashboard
+            <div class="main__cards">
+                <div class="main__card">
+                    <div class="card__top">
+                        Primary Card
                     </div>
-                    <div class="main__card">
-                        <div class="card__top"></div>
-                        <div class="card__botton"></div>
-                        <div class="main__card--yellow"></div>
-                    </div>
-                    <div class="main__card">
-                        <div class="card__top"></div>
-                        <div class="card__botton"></div>
-                        <div class="main__card--green"></div>
-                    </div>
-                    <div class="main__card">
-                        <div class="card__top"></div>
-                        <div class="card__botton"></div>
-                        <div class="main__card--red"></div>
-                    </div>
+                    <div class="card__botton"></div>
+                    View details >
+                    <div class="main__card--blue"></div>
+                </div>
+                <div class="main__card">
+                    <div class="card__top"></div>
+                    Warning Card
+                    <div class="card__botton"></div>
+                    View details >
+                    <div class="main__card--yellow"></div>
+                </div>
+                <div class="main__card">
+                    <div class="card__top"></div>
+                    Succes Card
+                    <div class="card__botton"></div>
+                    View details >
+                    <div class="main__card--green"></div>
+                </div>
+                <div class="main__card">
+                    <div class="card__top"></div>
+                    Danger Card
+                    <div class="card__botton"></div>
+                    View details >
+                    <div class="main__card--red"></div>
                 </div>
             </div>
-        </h1>
+        </div>
         </section>
         <footer>
             <h4></h4>
