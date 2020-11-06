@@ -161,13 +161,11 @@ a:hover {
 }
 
 .card__top {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     line-height: 6rem;
     padding: 1rem;
 }
 
 .card__bottom {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
     line-height: 2rem;
     padding: 1rem;
 }
@@ -189,4 +187,20 @@ a:hover {
 
 .main__card--red {
     background-color: rgb(220, 53, 69);
+}
+
+.main__card--blue > .card__bottom {
+    background-color: rgb(10, 106, 209);
+}
+
+.main__card--yellow > .card__bottom {
+    background-color: rgb(240, 182, 8);
+}
+
+.main__card--green > .card__bottom {
+    background-color: rgb(40, 196, 76);
+}
+
+.main__card--red > .card__bottom {
+    background-color: rgb(252, 63, 82);
 }
