@@ -55,6 +55,7 @@ a:hover {
     padding: .375rem .75rem;
     font-size: 1.2rem;
 }
+
 .search__input:focus {
     border: 2px solid rgb(128, 189, 255);
     transition: .15s;
@@ -69,6 +70,7 @@ a:hover {
     cursor: pointer;
     font-size: 1rem;
     padding: .6rem;
+    vertical-align: top;
 }
 
 .others__btn {
@@ -144,7 +146,7 @@ a:hover {
     color: rgb(123, 123, 123);
     font-size: 1rem;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
 
 .main__cards {
@@ -156,8 +158,8 @@ a:hover {
 }
 
 .main__card {
-    border-radius: 5px;
-    width: 15rem;
+    border-radius: .25rem;
+    width: 16rem;
 }
 
 .card__top {
@@ -189,18 +191,36 @@ a:hover {
     background-color: rgb(220, 53, 69);
 }
 
-.main__card--blue > .card__bottom {
-    background-color: rgb(10, 106, 209);
+.main__card--blue .card__top:hover {
+    background-color: rgb(0, 119, 247);
+    transition: .3s;
 }
 
-.main__card--yellow > .card__bottom {
-    background-color: rgb(240, 182, 8);
+.main__card--blue .card__bottom:hover {
+    background-color: rgb(0, 119, 247);
+    transition: .3s;
 }
 
-.main__card--green > .card__bottom {
-    background-color: rgb(40, 196, 76);
+.main__card--yellow .card__top:hover {
+    background-color: rgb(247, 186, 7);
 }
 
-.main__card--red > .card__bottom {
-    background-color: rgb(252, 63, 82);
+.main__card--yellow .card__bottom:hover {
+    background-color: rgb(247, 186, 7);
+}
+
+.main__card--green .card__top:hover {
+    background-color: rgb(38, 162, 66);
+}
+
+.main__card--green .card__bottom:hover {
+    background-color: rgb(38, 162, 66);
+}
+
+.main__card--red .card__top:hover {
+    background-color: rgb(213, 50, 67);
+}
+
+.main__card--red .card__bottom:hover {
+    background-color: rgb(213, 50, 67);
 }
