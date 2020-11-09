@@ -6,7 +6,8 @@
 body {
     background-color: rgba(0, 0, 0, .9);
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -20,17 +21,19 @@ a:hover {
 
 .greater--position {
     cursor: pointer;
-    float: right;   
-    margin-left: 5rem;
+    float: right;
+    padding-right: .75rem;
 }
 
 /*HEADER*/
 
 .header--dark {
+    align-items: center;
     background-color: rgb(51, 57, 64);
     color: rgb(236, 236, 236);
-    margin-top: 1.25em;
-    padding: .75em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
 }
 
 .header__title {
@@ -40,25 +43,23 @@ a:hover {
     padding-right: 5rem;
 }
 
-.header__form {
-    float: right;
-}
-
 .header__search {
     display: inline;
+    margin-left: auto;
+    padding-right: 1rem;
 }
 
 .search__input {
     border: 2px solid rgb(236, 236, 236);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: .375rem .75rem;
     font-size: 1.2rem;
+    padding: .375rem .75rem;
+    transition: .15s;
 }
 
 .search__input:focus {
     border: 2px solid rgb(128, 189, 255);
-    transition: .15s;
 }
 
 .search__btn {
@@ -72,7 +73,7 @@ a:hover {
     margin-left: -5px;
     padding: .6rem;
     position: relative;
-    top: -1.2px;
+    top: -1.5px;
 }
 
 .others__btn {
@@ -86,23 +87,20 @@ a:hover {
 
 /*MAIN-ASIDE*/
 
-.main {
+main {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    height: 100%;
 }
 
 .main__aside {
-    display: inline-block;
-    height: 600px;
-    width: 15%;
-}
-
-.main__nav {
     background-color: rgb(33, 37, 41);
+    min-width: 12rem;
 }
 
 .nav__ul {
     display: inline;
+    list-style: none;
     padding: 0 5px;
 }
 
@@ -110,12 +108,11 @@ a:hover {
     color: rgb(128, 128, 128);
     font-size: 1.1rem;
     line-height: 3rem;
-    list-style: none;
     margin-left: 15px;
 }
 
 .li__active:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(236, 236, 236);
 }
 
 .li__inactive {
@@ -131,15 +128,13 @@ a:hover {
 
 .content {
     background-color: rgb(255, 255, 255);
-    display: inline-block;
-    font-size: 1.8rem;
-    height: 600px;
-    vertical-align: top;
-    width: 84.6%;
+    flex-basis: 100%;    
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .content h1 {
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .main__breadcrumb {
@@ -155,6 +150,7 @@ a:hover {
     color: rgba(255, 255, 255, .9);
     cursor: pointer;
     display: flex;
+    flex-direction: row;
     font-size: 1rem;
     padding: 1rem;
 }
@@ -165,64 +161,57 @@ a:hover {
 }
 
 .card__top {
-    line-height: 6rem;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
     padding: 1rem;
 }
 
 .card__bottom {
-    line-height: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
     padding: 1rem;
 }
 
 .main__card--blue {
     background-color: rgb(0, 123, 255);
     margin-right: auto;
+    transition: .3s;
 }
 
 .main__card--yellow {
     background-color: rgb(255, 193, 7);
     margin-right: auto;
+    transition: .3s;
 }
 
 .main__card--green {
     background-color: rgb(40, 167, 69);
     margin-right: auto;
+    transition: .3s;
 }
 
 .main__card--red {
     background-color: rgb(220, 53, 69);
-}
-
-.main__card--blue .card__top:hover {
-    background-color: rgb(0, 119, 247);
     transition: .3s;
 }
 
-.main__card--blue .card__bottom:hover {
+.main__card--blue .card__top:hover, .main__card--blue .card__bottom:hover {
     background-color: rgb(0, 119, 247);
-    transition: .3s;
 }
 
-.main__card--yellow .card__top:hover {
+.main__card--yellow .card__top:hover, .main__card--yellow .card__bottom:hover {
     background-color: rgb(247, 186, 7);
 }
 
-.main__card--yellow .card__bottom:hover {
-    background-color: rgb(247, 186, 7);
-}
-
-.main__card--green .card__top:hover {
+.main__card--green .card__top:hover, .main__card--green .card__bottom:hover {
     background-color: rgb(38, 162, 66);
 }
 
-.main__card--green .card__bottom:hover {
-    background-color: rgb(38, 162, 66);
-}
-
-.main__card--red .card__top:hover {
-    background-color: rgb(213, 50, 67);
-}
-
-.main__card--red .card__bottom:hover {
+.main__card--red .card__top:hover, .main__card--red .card__bottom:hover {
     background-color: rgb(213, 50, 67);
 }
